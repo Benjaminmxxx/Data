@@ -1,4 +1,5 @@
 # Homework
+
 #1.	Inserte los registros del sql "registros_henry.sql" dentro de la base de datos creada en la clase anterior, 
 #corregir los errores que impidan la instrucción:
 
