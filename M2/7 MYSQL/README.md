@@ -1,3 +1,5 @@
+![HenryLogo](https://d31uz8lwfmyn8g.cloudfront.net/Assets/logo-henry-white-lg.png)
+
 ## Principales Objetivos de Aprendizaje para esta Clase
 
 -Comprender el concepto de KPI
@@ -18,6 +20,12 @@ Un KPI es un número, que puede obtenerse de manera de directa o mediante alguna
 Los KPI’s además se relacionan con el nivel de responsabilidades sobre los resultados en una organización. Tomando el ejemplo anterior, un agente de ventas puede tener un KPI individual que contribuya a cumplir con el objetivo operativo del área.<br>
 En la industria de la tecnología en muy común que una empresa se financie a través de capital de riesgo, por lo que la definición y seguimiento de buenos KPI son cruciales para acceder a nueva inversión y asegurar en éxito de la compañía.
 
+[¿Como tener éxito en una stratup?](https://www.ycombinator.com/library/89-how-to-succeed-with-a-startup-sus-2018)
+
+[Stratup - Paul Graham](http://paulgraham.com/start.html)
+
+[Understanding The Real Keys To Effective KPis](https://ide.mit.edu/wp-content/uploads/2018/08/2018-08-MITIDE-researchbrief-Schrage-Kiron.pdf?x57209)
+
 ### ¿Cuáles son los KPI´s relevantes en tecnología?
 
 * Runway:
@@ -31,6 +39,8 @@ Por ejemplo, si una startup gasta USD $ 10 mil al mes y tienes USD $ 50 mil en c
 
 El runway es la principal métrica de supervivencia a la que el CEO de una startup tiene que dar seguimiento. De hecho, quedarse sin runway es la primera razón más común por las que las startups fracasan.
 
+[Runway](https://www.brex.com/blog/startup-runway/#:~:text=Startup%20runway%20refers%20to%20how,fundraising%20throughout%20your%20company%27s%20lifecycle.)
+
 * Conversion rate:
 
 Permite conocer la capacidad de monetizar un negocio. Las startups están basadas en tecnología, lo que les permite poder escalar de manera rápida. La tasa de conversión es el la cantidad de clientes que compraron mi producto sobre la cantidad total de clientes "registrados" o "interesados". Las tasas de conversión se toman en base a distintos grados de avance que puede tener un cliente a través del proceso de compra.<br>
@@ -41,6 +51,7 @@ Para cada paso se puede medir una conversión:<br>
   -- Inicios de proceso de compra / Registros.<br>
   -- Compras / Inicios del proceso de compra.<br>
 
+[Conversion rate](https://blog.useproof.com/calculate-conversion-rate)
 
 * CAC (Customer Adquisition Cost): 
 El CAC es una suma de los costos de adquisición directos e indirectos de cada canal, dividiéndolo entre el número total de usuarios captados. En los inicios de la vida de una startup, gran parte del costo está directamente relacionado a la pauta (Google Ads, Facebook Ads, etc.) y prensa (notas en medios). Es de esperar que este costo disminuya en el tiempo conforme aumenta la captación orgánica (potenciales clientes que buscan específicamente nuestro negocio).<br>
@@ -57,10 +68,14 @@ LTV= Compra media x Cantidad de compras x Tiempo activo en cartera
 
 Esta métrica se relaciona con el CAC debido a que siempre debe ser mayor, debido a que un cliente debería reportanos en ingresos más de lo que nos cuesta captarlo.
 
+[LTV](https://www.makingscience.es/blog/como-calcular-y-entender-el-ltv-y-cac-de-tu-negocio/)
+
 * Churn rate:
 El churn rate es la tasa de cancelación o abandono registrada en la cartera de clientes. Podria medirse a partir de los clientes que no llegan abonar en un e-comerce, los que han dado de baja su suscripción de un servicio On-Demand, o aquellos que no presentan actividad por cierto tiempo en servicios basados en comisiones. Se para un periodo específico mensual, trimestral o anual.
 
 (Clientes al cierre del período - Nuevos clientes del período) / Abandonos del periodo.
+
+[Churn rate](https://blog.hubspot.es/service/que-es-churn)
 
 * ROI (Return On Investment):
 Esta métrica permite medir el retorno de un determinado proyecto o una empresa, puede darse el caso de que sea en base a estimaciones o variables concretas.
@@ -74,14 +89,12 @@ Podríamos medir el ROI de una campaña en Facebook Ads:
 [Como un CFO trabaja con KIP Financieros - MIT](https://mitsloan.mit.edu/ideas-made-to-matter/how-chief-financial-officers-optimize-kpis-data-automation)
 
 ## Funciones en SQL
-Como vimos en el apartado anterior, para construir KPI es importante relacionar distintas variables y obtener conclusiones a partir de los calculos que realizamos.
+Como vimos en el apartado anterior, para construir KPI es importante relacionar distintas variables y obtener conclusiones a partir de los calculos que realizamos. Comencemos ahora con un primer acercamiento en SQL.
 
 Al igual que en Excel, algunos lenguajues de programación y software estadísticos, hay que tener en cuenta lo siguiente a la hora de utilizar una función:
 
 - Acción: es poco probable que conozcas todas las funciones que forman parte de SQL, por lo es importante al momento de buscar una función o funcionalidad, entender que tipo de acción u operación deseamos realizar.<br>
-
 Ej: Quiero buscar una palabra específica en un campo y saber cuantas veces aparece (LIKE y COUNT). <br>
-
 - Sintaxis: las funciones poseen un nombre que esta dado por una palabra reservada y una forma específica de invocarla. Si ese nombre no se escribe de manera correcta, se incurre en un error de sintaxis.<br>
 - Argumentos: los argumentos son los valores que se le deben pasar a una función para que esta pueda operar, si los argumentos no son válidos, la función no puede ejecutar la operación y devolvera un error.<br>
 - Valor de retorno: Cuando utilizas una función debes saber que tipo de valor retorna (INT, STRING, BOOL, etc.). Puede suceder que a veces la función retorne un valor, pero no sea el esperado por el usuario.
@@ -210,7 +223,7 @@ SELECT CONCAT(nombre," ",apellido) AS [Nombre y Apellido]
 FROM alumnos
 
 ```
-Lee la documentación oficial de MySQL para familiarizarte con otras funciones puedes utilizar. Por ahora solo nos centraremos en las funciones númericas, de texto y de fecha/hora. Mas Adelante en el M3 profundizaremos en un conocimiento más avanzado de SQL.
+Lee la documentación oficial de MySQL para familiarizarte con otras funciones puedes utilizar. Por ahora solo nos centraremos en las fucniones númericas, de texto y de fecha/hora. Mas Adelante en el M3 profundizaremos en un conocimiento más avanzado de SQL.
 
 [Funciones númericas](https://dev.mysql.com/doc/refman/8.0/en/numeric-functions.html)
 
@@ -231,3 +244,24 @@ Cuando realizas una consulta SQL, existe un orden definido para declarar las sen
 6. ORDER BY: Por último, ordenamos según los criterios necesarios.  
 
 Muchos de estos conceptos serán retomados en el M5, cuando desarrollemos las herramientas que nos ayudarán en la visualización y difusión de las métricas.
+
+## Homework
+
+1. ¿Cuantas carreas tiene Henry?
+2. ¿Cuantos alumnos hay en total?
+3. ¿Cuantos alumnos tiene cada cohorte?
+4. Confecciona un listado de los alumnos ordenado por los últimos alumnos que ingresaron, con nombre y apellido en un solo campo.
+5. ¿Cual es el nombre del primer alumno que ingreso a Henry?
+6. ¿En que fecha ingreso?
+7. ¿Cual es el nombre del ultimo alumno que ingreso a Henry?
+8. La función YEAR le permite extraer el año de un campo date, utilice esta función y especifique cuantos alumnos ingresarona a Henry por año.
+9. ¿Cuantos alumnos ingresaron por semana a henry?, indique también el año. WEEKOFYEAR()
+10. ¿En que años ingresaron más de 20 alumnos?
+11. Investigue las funciones TIMESTAMPDIFF() y CURDATE(). ¿Podría utilizarlas para saber cual es la edad de los instructores?. ¿Como podrías verificar si la función cálcula años completos? Utiliza DATE_ADD().
+12. Cálcula:<br>
+            - La edad de cada alumno.<br>
+            - La edad promedio de los alumnos de henry.<br>
+            - La edad promedio de los alumnos de cada cohorte.<br>
+13. Elabora un listado de los alumnos que superan la edad promedio de Henry.
+
+![ORDEN](/_src/assets/SQL.PNG)
