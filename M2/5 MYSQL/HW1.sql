@@ -3,17 +3,17 @@
 
 -- Crear un modelo relacional basado en el modelo de negocios de la Escuela:
 
---1. Identificar las relaciones.
---2. Identifcar primery key´s y foreing key´s.
---3. Definir los tipos de datos.
+-- 1. Identificar las relaciones.
+-- 2. Identifcar primery key´s y foreing key´s.
+-- 3. Definir los tipos de datos.
 
---La entidades a modelar junto sus atributos son: <br>
---* Carrea: ID, Nombre.<br>
---* Cohorte: ID, Código, Carrera, Fecha de Inicio, Fecha de Finalización, Instructor.<br>
---* Instructores: ID, Cédula de identidad, Nombre, Apellido, Fecha de Nacimiento, Fecha de Incorporación.<br>
---* Alumnos: ID, Cédula de identidad, Nombre, Apellido, Fecha de Nacimiento, Fecha de Ingreso, Cohorte.<br>
+-- La entidades a modelar junto sus atributos son: <br>
+-- * Carrea: ID, Nombre.<br>
+-- * Cohorte: ID, Código, Carrera, Fecha de Inicio, Fecha de Finalización, Instructor.<br>
+-- * Instructores: ID, Cédula de identidad, Nombre, Apellido, Fecha de Nacimiento, Fecha de Incorporación.<br>
+-- * Alumnos: ID, Cédula de identidad, Nombre, Apellido, Fecha de Nacimiento, Fecha de Ingreso, Cohorte.<br>
 
---Crear en MySQL las tablas y relaciones del modelo definido.<br>
+-- Crear en MySQL las tablas y relaciones del modelo definido.<br>
 
 DROP DATABASE henry;
 CREATE DATABASE henry;
